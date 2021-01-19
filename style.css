@@ -1,8 +1,55 @@
+.navbar {
+    margin:0px;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background-color: darkgray;
+    padding:30px;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.1fr 3.1fr 0.1fr;
+    grid-template-rows: 0.7fr 0.1fr 2.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . ."
+      ". . . ."
+      ". . . .";
+
+#grid-header {
+    background-color: blue;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+    
+}
+a:active {
+    color:black;
+    text-decoration: none;
+    
+}
+a:visited {
+    color:black;
+    text-decoration: none;
+    
+}
+
 .errorBox {
     margin:auto;
     width: 50%;
     border: 10px solid rgb(219, 183, 19);
     padding: 30px;
+    border-radius: 6px;
+    background-color: #cebc8b;
 }
 
 .header1 {
@@ -26,7 +73,7 @@ html {
 
 }
 
-button {
+.button {
     transition-duration: 0.4s;
     margin:50px;
     font-size:9px;
@@ -41,7 +88,7 @@ button {
     border-radius:8px;
   }
 
-  button:hover {
+.button:hover {
     background-color: #d4c8a6;
     color:white;
   }
@@ -55,3 +102,7 @@ button {
       display: flex;
       align-items: flex-end;
   }
+  html,body {
+    margin:0;
+    padding:0;
+}
