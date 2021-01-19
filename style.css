@@ -9,18 +9,57 @@
     border-bottom: 1px solid rgb(131, 131, 131);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 0.8fr 0.1fr 3.1fr 0.1fr;
-    grid-template-rows: 0.7fr 0.1fr 2.2fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". . . ."
-      ". . . ."
-      ". . . .";
-
+#grid-container {
+        display: grid;
+        grid-template-columns: 0.8fr 3.1fr 0.1fr;
+        grid-template-rows: 0.4fr 1.9fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+}
 #grid-header {
-    background-color: blue;
+
+    font-family: 'VT323', monospace;
+    color: orange;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    grid-column-start: 1;
+    background-color: rgb(80, 80, 80);
+}
+
+#myName {
+    font-size: 23px;
+    text-align: center;
+}
+
+#myPic {
+    filter:grayscale(100%);
+    padding-left: 45px;
+    width: 2%;
+    height: 3%;
+}
+
+#myJob {
+    text-align: center;
+}
+
+#grid-banner {
+    background-color: rgb(80, 80, 80);
+    grid-column-start: 2;
+    padding-left: 40px;
+    padding-bottom: 0px;
+}
+
+#grid-experience {
+    grid-row-start: 2;
+    background-color: rgb(155, 154, 154);
+    padding-left: 40px;
+    padding-top: 500px;
+}
+
+#grid-main {
+    grid-column
 }
 
 a:link {
